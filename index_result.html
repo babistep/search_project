@@ -7,6 +7,7 @@
     <title>Search result page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="popover.css">
+    <link rel="icon" href="./img/logo.png">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap" rel="stylesheet">
 </head>
@@ -32,15 +33,13 @@
                     <div class="search-bar">
                         <input class="search-input-result" value="小小步还没学会这个问题呢，等我问下师父再来告诉你答案哈~" />
                         <a href="index.html">
-                            <img aria-hidden="true"
-                                class="svg-icon search-left-icon"
-                                src="img/previous.svg"
-                                alt="arrow-back"
-                            />
+                            <img aria-hidden="true" class="svg-icon search-left-icon" src="img/previous.svg"
+                                alt="arrow-back" />
                         </a>
                     </div>
                     <div class="info">
-                    <img id="trigger" data-popover-target="info-popover" aria-hidden="true" class="svg-icon info-icon" src="img/round-info-button.svg">
+                        <img id="trigger" data-popover-target="info-popover" aria-hidden="true"
+                            class="svg-icon info-icon" src="img/round-info-button.svg">
                         <template data-popover="info-popover">
                             使用提示：本网站提供市场上已有日常生活产品或服务的趣味对比
                             举例：用户输入“洛杉矶市区最好吃的海南鸡饭是哪家？”
@@ -49,9 +48,10 @@
                         </template>
                     </div>
                 </form>
-                <div class="rate-answer" >
+                <div class="rate-answer">
                     <div class="emoji">
-                        <a href="#" onclick="disappear(event)"><img src="img/emoji/laughing.svg" alt="emoji-laughing"></a>
+                        <a href="#" onclick="disappear(event)"><img src="img/emoji/laughing.svg"
+                                alt="emoji-laughing"></a>
                     </div>
                     <div class="emoji">
                         <a href="#" onclick="disappear(event)"><img src="img/emoji/wink.svg" alt="emoji-wink"></a>
@@ -67,21 +67,26 @@
         </div>
         <footer>
             <div>
-              <p>小小步 © 2020 &middot;<a href="http://www.beian.miit.gov.cn">粤ICP备19147212号琼</a><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=46020402000087"><img src="img/authority.png" />琼公网安备 46020402000087号</a></p>
-                <p>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>, <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Good Ware">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+                <p>小小步 © 2020<span style="margin-left: 10px;">
+                    珠海六个火科技有限公司</span><a href="http://www.beian.miit.gov.cn" style="margin-left: 10px;">粤ICP备19147212号-1</a><a
+                        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=46020402000087"><img
+                            src="img/authority.png"  style="margin-left: 10px;" />琼公网安备 46020402000087号</a></p>
+                <p>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a>,
+                    <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Good Ware">Gregor Cresnar</a> from
+                    <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
             </div>
         </footer>
     </main>
-<script type="text/javascript" src="popover.js"> </script>
-<script type="text/javascript">
-    function disappear(e) {
-        e.preventDefault();
-        const emoji = document.getElementsByClassName('emoji')
-        for (i = 0; i < emoji.length; i++) {
-            emoji[i].style.display = 'none';
+    <script type="text/javascript" src="popover.js"> </script>
+    <script type="text/javascript">
+        function disappear(e) {
+            e.preventDefault();
+            const emoji = document.getElementsByClassName('emoji')
+            for (i = 0; i < emoji.length; i++) {
+                emoji[i].style.display = 'none';
+            }
         }
-    }
-</script>
+    </script>
 </body>
 
 </html>
